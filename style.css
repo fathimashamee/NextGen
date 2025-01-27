@@ -1,0 +1,126 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body{
+    
+}
+
+header{
+    background-color: rgb(15, 74, 123);
+    padding: 10px 20px;
+    margin: 0px;
+    position: fixed; /* Fixes the header at the top */
+    top: 0; /* Ensures the header stays at the very top */
+    width: 100%; /* Makes the header span the full width of the viewport */
+    /* z-index: 1000; Ensures the header is above other content */
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px; 
+}
+
+nav h1{
+    border-bottom: solid rgb(12, 175, 175) 0.5px;
+    border-right: solid rgb(12, 175, 175) 0.5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    margin-left: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    color: aqua;
+    font-size: 24px;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    padding: 20px;
+    color: bisque;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.nav-link a:hover{
+    text-decoration: underline;
+    /* transition: 5s ease-in-out; */
+}
+
+section{
+    background-image: url(https://www.cablelabs.com/wp-content/uploads/2018/03/Emerging-Technology-Intro.jpg);
+	background-size: cover; /* fit for the screen */
+    /* opacity: 1000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Makes the hero section take up the full viewport height */
+    text-align: center; /* Centers text alignment within the h1 */
+}
+
+.hero h1{
+    font-size: 3rem; /* Adjust font size for better visibility */
+    color: white; /* Choose a color that contrasts with the background */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds a shadow for better readability */
+}
+
+.hero p{
+    color: rgb(7, 7, 7);
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px gray;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.hero a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: azure;
+    border: 2px azure solid;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.hero a:hover{
+    background-color: #36a8f4;
+    transition: background-color 1s ease;
+}
+
+footer{
+    background-color: rgb(2, 3, 3);
+    padding-left: 10px;
+    border-top: 2px rgb(15, 74, 123) solid;
+    border-bottom: 2px rgba(173, 193, 209, 0.129) solid;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content p{
+    color: bisque;
+    padding-top: 10px;
+}
+
+.footer-content nav{
+    display: inline-block;
+    justify-content: space-around; 
+}
+
+.footer-content nav b{
+    color: azure;
+}
+
+.footer-content nav a{
+    text-decoration: none;
+    color: azure;
+}
+
+.social-icons a{
+    text-decoration: none;
+}
